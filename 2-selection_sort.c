@@ -5,7 +5,7 @@
  * selection algorithm
  *
  * @array: parameter 1
- * @size: size of the array 
+ * @size: size of the array
  *
  * Return: void
  */

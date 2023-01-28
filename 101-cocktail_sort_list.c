@@ -10,15 +10,15 @@
  */
 listint_t *swap_n(listint_t *node, listint_t **list)
 {
-	listint_t *pre = node->prev;
+	listint_t *prev_n = node->prev;
 	listint_t *curr = node;
 
-	pre->next = curr->next;
+	prev_n->next = curr->next;
 	if (curr->next)
-	{curr->next->prev = back; }
-	curr->next = pre;
-	curr->prev = pre->prev;
-	pre->prev = curr;
+	{curr->next->prev = prev_n; }
+	curr->next = prev_n;
+	curr->prev = prev_n->prev;
+	prev_n->prev = curr;
 	if (curr->prev)
 	{curr->prev->next = curr; }
 	else

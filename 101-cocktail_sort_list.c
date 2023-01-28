@@ -1,13 +1,13 @@
 #include "sort.h"
 /**
- *swap - function swaps node and previous node
+ *swap_n - function swaps node and previous node
  *
  *@node: node
  *@list: node list
  *
  *Return: return a pointer to a node which was enter it
  */
-listint_t *swap(listint_t *node, listint_t **list)
+listint_t *swap_n(listint_t *node, listint_t **list)
 {
 	listint_t *pre = node->prev;
 	listint_t *curr = node;
@@ -59,7 +59,7 @@ void cocktail_sort_list(listint_t **list)
 		{
 			if (node->n < node->prev->n)
 			{
-				node = swap_node(node, list);
+				node = swap_n(node, list);
 				swapped = 1;
 				print_list(*list);
 			}

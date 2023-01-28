@@ -25,6 +25,6 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
 void counting_sort(int *array, size_t size);
-listint_t *swap(listint_t *node, listint_t **list);
+listint_t *swap_n(listint_t *node, listint_t **list);
 void cocktail_sort_list(listint_t **list);
 #endif

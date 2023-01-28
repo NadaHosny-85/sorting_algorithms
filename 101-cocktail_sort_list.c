@@ -1,11 +1,12 @@
 #include "sort.h"
+
 /**
- *swap_n - function swaps node and previous node
+ * swap_n - function swaps node and previous node
  *
- *@node: node
- *@list: node list
+ * @node: parameter 1
+ * @list: node list
  *
- *Return: return a pointer to a node which was enter it
+ * Return: pointer to node
  */
 listint_t *swap_n(listint_t *node, listint_t **list)
 {
@@ -26,10 +27,9 @@ listint_t *swap_n(listint_t *node, listint_t **list)
 }
 
 /**
- *cocktail_sort_list - function sorts based on cocktail sort
- *algorithm on a double linked lists
+ * cocktail_sort_list - function sorts based on cocktail sort
  *
- *@list: list
+ * @list: parameter 1
  */
 void cocktail_sort_list(listint_t **list)
 {
